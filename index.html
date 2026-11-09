@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="preload" as="image" href="img/hero-1600.jpg" imagesrcset="img/hero-800.jpg 800w, img/hero-1600.jpg 1600w" imagesizes="(min-width:900px) 620px, 100vw">
+<link rel="preload" as="image" href="img/despues-1600.jpg" imagesrcset="img/despues-800.jpg 800w, img/despues-1600.jpg 1600w" imagesizes="(min-width:900px) 620px, 100vw">
 <script src="config.js?v=r18-2"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "RHR Arquitectura e Interiores", "description": "Diseñamos, fabricamos e instalamos cocinas y muebles a medida en Montevideo. Cada proyecto viene con un visor 3D para recorrerlo antes de fabricar, con los electrodomésticos reales.", "url": "https://rhr-interiores.github.io/", "image": "https://rhr-interiores.github.io/og.jpg", "telephone": "+598 96 071 856", "areaServed": ["Montevideo", "Punta del Este"], "address": {"@type": "PostalAddress", "addressLocality": "Montevideo", "addressCountry": "UY"}, "sameAs": ["https://www.instagram.com/rhr_arquitectura_interiores/"]}</script>
 <style>
@@ -186,6 +186,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justif
 footer a{text-decoration:none}
 footer a:hover{color:var(--ink)}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* RHR: presentation, navigation and contact */
+:root{--accent:#A84A0A;--accent-ink:#fff}
+.logo{height:50px}.top .wrap{height:76px}.hero h1{font-size:clamp(38px,4.5vw,54px);max-width:13ch;font-stretch:105%;line-height:1.06}.hero .wrap{gap:36px}.hero .shot{aspect-ratio:4/3}.hero .lead{max-width:44ch}.hero .cta{gap:12px}.stats b{font-size:clamp(19px,2.2vw,26px);font-stretch:100%;line-height:1.2}.stats li{gap:8px}.stats{padding:30px 0}.project-status{font:500 11px/1.5 var(--f-mono);text-transform:uppercase;letter-spacing:.07em}.card h3{font-size:28px}.card-body{padding:26px;gap:14px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}.service-grid article{border-top:2px solid var(--brand);padding-top:22px}.service-num{font:500 11px var(--f-mono);letter-spacing:.08em;color:var(--muted)}.service-grid h3{font-size:27px;margin-top:18px}.service-grid p{color:var(--muted);line-height:1.7}.service-grid a,.text-link{font-weight:600;text-underline-offset:5px}.studio{background:var(--bg2);border-block:1px solid var(--line)}.studio-grid,.faq-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:70px}.studio h2{margin-top:16px;max-width:15ch}.studio p:not(.eyebrow){line-height:1.75}.faq-list details{border-bottom:1px solid var(--line);padding:20px 0}.faq-list details:first-child{border-top:1px solid var(--line)}.faq-list summary{cursor:pointer;font-weight:600;font-size:17px;line-height:1.5}.faq-list p{color:var(--muted);line-height:1.7;margin-bottom:4px}.fl select{width:100%;border:1px solid var(--line);border-radius:8px;padding:12px;background:var(--card);color:var(--ink);font:inherit}.menu-toggle,.mobile-contact{display:none}select:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--brand);outline-offset:4px}.lbl{font-size:12px}.nav{gap:18px}.btn span[aria-hidden]{font-family:Arial,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent:#C9A276;--accent-ink:#1A1A17}}
+@media(max-width:759px){.hero .wrap{gap:28px}.hero h1{max-width:15ch}.hero .cta{width:100%}.hero .cta .btn{flex:1 1 100%}.hero .shot{aspect-ratio:4/3}.logo{height:46px}.top .wrap{height:68px}.menu-toggle{display:inline-flex;gap:12px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:600 14px var(--f-display)}.nav{display:none;position:absolute;top:68px;left:0;right:0;padding:20px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow)}.nav.is-open{display:flex;align-items:stretch;flex-direction:column;gap:8px}.nav a.l{display:block;padding:12px}.nav .btn span{display:inline}.nav .btn{padding:12px;border-radius:8px}.stats ul{grid-template-columns:1fr;gap:18px}.stats li{display:grid;grid-template-columns:1fr 1.2fr;align-items:center;gap:12px}.stats li:not(:last-child){padding-bottom:16px;border-bottom:1px solid var(--line)}.stats span,.stats li:nth-child(2) span{font-size:13px}.grid,.service-grid,.studio-grid,.faq-grid{grid-template-columns:1fr}.studio-grid,.faq-grid{gap:28px}.service-grid{gap:30px}.card-body{padding:22px}.mobile-contact{display:flex;position:fixed;bottom:calc(12px + env(safe-area-inset-bottom,0px));left:16px;right:16px;z-index:25;box-shadow:var(--shadow);padding:16px}.mobile-contact:focus{outline:3px solid var(--ink)}footer{padding-bottom:calc(100px + env(safe-area-inset-bottom,0px))}html{scroll-padding-top:84px}body{padding-bottom:0}body:has(#contacto input:focus) .mobile-contact,body:has(#contacto textarea:focus) .mobile-contact,body:has(#contacto select:focus) .mobile-contact{display:none}.cmp .lbl{padding:6px 9px;font-size:11px}.sec-head{margin-bottom:24px}}
+
 </style>
 </head>
 <body>
@@ -196,9 +203,12 @@ footer a:hover{color:var(--ink)}
       <img class="logo logo-l" src="img/logo.png" width="440" height="229" alt="RHR Arquitectura e Interiores">
       <img class="logo logo-d" src="img/logo-light.png" width="440" height="229" alt="RHR Arquitectura e Interiores">
     </a>
-    <nav class="nav" aria-label="Secciones">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav">Menú <span aria-hidden="true">☰</span></button>
+    <nav id="mainNav" class="nav" aria-label="Secciones">
       <a class="l" href="#proyectos">Proyectos</a>
+      <a class="l" href="#servicios">Servicios</a>
       <a class="l" href="#como">Cómo trabajamos</a>
+      <a class="l" href="#estudio">Estudio</a>
       <a class="l" href="#contacto">Contacto</a>
       <a class="btn wa js-wa" href="#" target="_blank" rel="noopener" data-track="portada whatsapp" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.1-1.3A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-3-.2-.3a8.2 8.2 0 1 1 6.9 3.9zm4.5-6.1c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.19-.54.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43l-.76-1.83c-.2-.48-.4-.41-.56-.42h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.57 11 11 0 0 0 4.2 3.7c1.57.68 2.18.74 2.96.62a2.5 2.5 0 0 0 1.66-1.17 2 2 0 0 0 .14-1.17c-.06-.11-.22-.17-.47-.29z"/></svg><span>WhatsApp</span></a>
     </nav>
@@ -210,27 +220,27 @@ footer a:hover{color:var(--ink)}
     <div class="wrap">
       <div class="hero-txt">
         <p class="eyebrow">Cocinas y muebles a medida · Montevideo</p>
-        <h1>Recorré tu cocina en 3D antes de fabricarla</h1>
+        <h1>Tu cocina, pensada para vivirla</h1>
         <span class="bar" aria-hidden="true"></span>
-        <p class="lead">Diseñamos, fabricamos e instalamos cocinas a medida. Cada proyecto viene con un visor 3D donde abrís cada puerta, cajón y electrodoméstico, con los equipos reales que se van a colocar.</p>
+        <p class="lead">Diseñamos, fabricamos e instalamos cocinas y muebles a medida. Explorá la distribución, las terminaciones y el espacio de guardado en 3D antes de fabricar.</p>
         <div class="cta">
-          <a class="btn primary" href="cocina-3-0/" data-track="portada abrir cocina-3-0 hero"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 20 7.3v9.4l-8 4.5-8-4.5V7.3z"/><path d="M4 7.3 12 12l8-4.7M12 12v9.2"/></svg>Ver la Cocina 3.0 en 3D</a>
-          <a class="btn" href="#contacto">Pedir presupuesto</a>
+          <a class="btn primary" href="#contacto" data-track="portada presupuesto hero">Pedir presupuesto <span aria-hidden="true">→</span></a>
+          <a class="btn" href="cocina-3-0/" data-track="portada abrir cocina-3-0 hero">Explorar una cocina en 3D</a>
         </div>
       </div>
       <a class="shot" href="cocina-3-0/" data-track="portada abrir cocina-3-0 hero" aria-label="Abrir el visor 3D de la Cocina 3.0">
-        <img src="img/hero-1600.jpg" srcset="img/hero-800.jpg 800w, img/hero-1600.jpg 1600w" sizes="(min-width:900px) 620px, 100vw" width="1600" height="1000"
-          alt="Cocina 3.0 en el visor 3D con el microondas, un cajón y puertas de aéreos y bajo mesada abiertos" fetchpriority="high">
+        <img src="img/despues-1600.jpg" srcset="img/despues-800.jpg 800w, img/despues-1600.jpg 1600w" sizes="(min-width:900px) 620px, 100vw" width="1600" height="1000"
+          alt="Propuesta 3D de cocina en U con frentes cerrados, tonos cashmere y mesada negra" fetchpriority="high">
         <span class="badge big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 20 7.3v9.4l-8 4.5-8-4.5V7.3z"/><path d="M4 7.3 12 12l8-4.7M12 12v9.2"/></svg>Recorrela en 3D</span>
       </a>
     </div>
   </section>
 
-  <div class="stats" aria-label="Experiencia">
+  <div class="stats" aria-label="Nuestra propuesta">
     <ul class="wrap">
-      <li><b>+200</b><span>cocinas instaladas</span></li>
-      <li><b>+10</b><span>obras en Montevideo y Punta del Este</span></li>
-      <li><b>3D</b><span>visor interactivo en cada proyecto</span></li>
+      <li><b>A medida</b><span>Para tu espacio y tu forma de usarlo</span></li>
+      <li><b>Antes, en 3D</b><span>Explorá y ajustá el diseño</span></li>
+      <li><b>De principio a fin</b><span>Del relevamiento a la instalación</span></li>
     </ul>
   </div>
 
@@ -238,8 +248,8 @@ footer a:hover{color:var(--ink)}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Proyectos</p>
-        <h2>Abrilos y recorrelos como si estuvieras adentro</h2>
-        <p class="lead">Funcionan en el celular y en la compu, sin instalar nada.</p>
+        <h2>Diseños que aprovechan cada espacio</h2>
+        <p class="lead">Conocé las propuestas y explorá sus modelos 3D desde el celular o la computadora, sin instalar nada.</p>
       </div>
       <div class="grid">
       <article class="card">
@@ -248,10 +258,10 @@ footer a:hover{color:var(--ink)}
           <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 20 7.3v9.4l-8 4.5-8-4.5V7.3z"/><path d="M4 7.3 12 12l8-4.7M12 12v9.2"/></svg>Visor 3D</span>
         </a>
         <div class="card-body">
-          <h3>Cocina 3.0</h3>
-          <p class="meta">Planta en U · 2,50 × 2,37 m</p>
-          <p>Cajonera de 90 cm bajo el anafe con cubertero oculto, esquinero con la garrafa al fondo, torre de horno y microondas y vitrina de vidrio.</p>
-          <ul class="tags"><li>Electrodomésticos reales</li><li>Antes y después</li><li>Luz de noche</li></ul>
+          <p class="project-status">Propuesta de diseño · Modelo 3D</p><h3>Cocina en U</h3>
+          <p class="meta">Cashmere y granito negro · 2,50 × 2,37 m</p>
+          <p>Una distribución en U que integra preparación, cocción y guardado. Frentes cashmere, mesada de granito negro y una vitrina que aporta ligereza al conjunto.</p>
+          <ul class="tags"><li>Electrodomésticos reales</li><li>Estado actual y propuesta</li><li>Luz de noche</li></ul>
           <a class="btn primary" href="cocina-3-0/" data-track="portada abrir cocina-3-0">Recorrer en 3D <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
@@ -261,21 +271,14 @@ footer a:hover{color:var(--ink)}
           <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 20 7.3v9.4l-8 4.5-8-4.5V7.3z"/><path d="M4 7.3 12 12l8-4.7M12 12v9.2"/></svg>Visor 3D</span>
         </a>
         <div class="card-body">
-          <h3>Escritorio con biblioteca</h3>
+          <p class="project-status">Propuesta de diseño · Fotomontaje</p><h3>Un estudio integrado al living</h3>
           <p class="meta">2,30 × 0,90 m · altura 2,09 m</p>
-          <p>Biblioteca con puertas, mueble con cajonera, tapa de madera y estantería de tubo 20×20, pensados a medida para el ambiente.</p>
+          <p>Un lugar para trabajar y guardar, integrado al ambiente. El blanco y la madera combinan superficies de apoyo, cajones y estantes abiertos para libros y objetos.</p>
           <ul class="tags"><li>Fotomontajes</li><li>Puertas y cajones</li><li>Melamina, madera y metal</li></ul>
           <a class="btn primary" href="escritorio-biblioteca/" data-track="portada abrir escritorio-biblioteca">Recorrer en 3D <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
-      <article class="card next">
-        <div class="card-body">
-          <span class="next-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 20 7.3v9.4l-8 4.5-8-4.5V7.3z"/><path d="M4 7.3 12 12l8-4.7M12 12v9.2"/></svg></span>
-          <h3>Tu proyecto, el próximo</h3>
-          <p>Pedí un presupuesto estimado sin costo. Cuando avanzamos, armamos el diseño en 3D para que lo recorras y lo ajustemos juntos antes de fabricar.</p>
-          <a class="btn" href="#contacto">Pedir presupuesto</a>
-        </div>
-      </article>
+
       </div>
     </div>
   </section>
@@ -283,19 +286,31 @@ footer a:hover{color:var(--ink)}
   <section class="ba" aria-labelledby="h-ba">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">Antes y después</p>
-        <h2 id="h-ba">Del relevamiento al proyecto</h2>
-        <p class="lead">Relevamos la obra con fotos y medidas y la llevamos al modelo. Así comparás el estado actual con la cocina terminada, desde el mismo lugar.</p>
+        <p class="eyebrow">Visualizá el cambio</p>
+        <h2 id="h-ba">Del espacio actual a tu próxima cocina</h2>
+        <p class="lead">Partimos de fotos y medidas del ambiente para desarrollar la propuesta. Compará el estado actual con el diseño 3D desde la misma perspectiva.</p>
       </div>
       <div class="cmp" id="cmp">
-        <img src="img/despues-1600.jpg" srcset="img/despues-800.jpg 800w, img/despues-1600.jpg 1600w" sizes="(min-width:1120px) 1120px, 100vw" width="1600" height="1000" loading="lazy" alt="Después: la Cocina 3.0 terminada en el modelo 3D">
+        <img src="img/despues-1600.jpg" srcset="img/despues-800.jpg 800w, img/despues-1600.jpg 1600w" sizes="(min-width:1120px) 1120px, 100vw" width="1600" height="1000" loading="lazy" alt="Propuesta: visualización 3D de la cocina, no fotografía de obra terminada">
         <img class="before" src="img/antes-1600.jpg" srcset="img/antes-800.jpg 800w, img/antes-1600.jpg 1600w" sizes="(min-width:1120px) 1120px, 100vw" width="1600" height="1000" loading="lazy" alt="Antes: el ambiente en obra, con las paredes de yeso y las instalaciones a la vista">
         <span class="line" aria-hidden="true"></span>
         <span class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
-        <span class="lbl a" aria-hidden="true">Antes</span><span class="lbl d" aria-hidden="true">Después</span>
-        <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Comparar antes y después: deslizá para mover el corte">
+        <span class="lbl a" aria-hidden="true">Estado actual</span><span class="lbl d" aria-hidden="true">Propuesta 3D</span>
+        <input type="range" min="0" max="100" value="50" step="0.5" aria-label="Comparar estado actual y propuesta 3D: deslizá para mover el corte">
       </div>
-      <p class="ba-note">Deslizá para comparar. En el <a href="cocina-3-0/" data-track="portada abrir cocina-3-0 antes">visor 3D</a> podés hacerlo desde cualquier ángulo.</p>
+      <p class="ba-note">La propuesta es una visualización 3D. Deslizá para comparar. En el <a href="cocina-3-0/" data-track="portada abrir cocina-3-0 antes">visor 3D</a> podés hacerlo desde cualquier ángulo.</p>
+    </div>
+  </section>
+
+
+  <section id="servicios">
+    <div class="wrap">
+      <div class="sec-head"><p class="eyebrow">Muebles para tu día a día</p><h2>Una solución para cada ambiente</h2><p class="lead">Diseño, materiales y distribución pensados en conjunto.</p></div>
+      <div class="service-grid">
+        <article><span class="service-num">01 / COCINAS</span><h3>Todo en su lugar</h3><p>Distribución, superficies de trabajo y guardado adaptados al espacio y a tus electrodomésticos.</p><a href="#contacto" data-service="Cocina">Consultar por una cocina →</a></article>
+        <article><span class="service-num">02 / PLACARES</span><h3>Orden a tu medida</h3><p>Interiores organizados según lo que necesitás guardar, con frentes que acompañan el ambiente.</p><a href="#contacto" data-service="Placar">Consultar por un placar →</a></article>
+        <article><span class="service-num">03 / LIVING Y ESTUDIO</span><h3>Espacios que conviven</h3><p>Bibliotecas, escritorios y muebles que integran trabajo, descanso y almacenamiento.</p><a href="#contacto" data-service="Living o estudio">Consultar por un mueble →</a></article>
+      </div>
     </div>
   </section>
 
@@ -314,11 +329,31 @@ footer a:hover{color:var(--ink)}
     </div>
   </section>
 
+
+  <section id="estudio" class="studio">
+    <div class="wrap studio-grid">
+      <div><p class="eyebrow">RHR Arquitectura e Interiores</p><h2>Diseñar también es acompañar.</h2></div>
+      <div><p class="lead">Soy Rubén. En RHR trabajamos sobre cada espacio para encontrar una distribución funcional y una propuesta de mobiliario que acompañe tu día a día.</p><p>El modelo 3D nos permite conversar sobre decisiones concretas: cómo abre una puerta, qué entra en un cajón y cómo se relaciona el mueble con el ambiente. Así podemos ajustar el proyecto juntos antes de fabricar.</p><a href="#contacto" class="text-link">Contame qué querés transformar →</a></div>
+    </div>
+  </section>
+  <section id="preguntas">
+    <div class="wrap faq-grid">
+      <div class="sec-head"><p class="eyebrow">Antes de empezar</p><h2>Tu proyecto, con las cosas claras.</h2><p class="lead">Estas son algunas de las consultas más habituales.</p></div>
+      <div class="faq-list">
+        <details><summary>¿Qué necesito para pedir un presupuesto?</summary><p>Fotos del espacio, medidas aproximadas y una idea de lo que necesitás. Con esa información podemos preparar una estimación inicial sin costo.</p></details>
+        <details><summary>¿Cuándo se realiza el diseño 3D?</summary><p>Cuando avanzamos con una seña, realizamos el relevamiento y desarrollamos el modelo 3D. La seña se descuenta del total, según el proceso indicado en la propuesta.</p></details>
+        <details><summary>¿Puedo explorar el proyecto desde mi celular?</summary><p>Sí. Los proyectos de esta web se abren en el navegador, sin instalar aplicaciones. Podés recorrerlos y probar sus puertas y cajones interactivos.</p></details>
+        <details><summary>¿El presupuesto inicial es definitivo?</summary><p>Es una estimación basada en las fotos y medidas aproximadas. El alcance y el importe final se definen con el relevamiento, el diseño y los materiales elegidos.</p></details>
+        <details><summary>¿Cómo consulto por plazos, instalación y garantía?</summary><p>Contanos dónde está el proyecto y para cuándo lo necesitás. Solicitá que la propuesta detalle el alcance de la instalación, los plazos y las condiciones de garantía aplicables a tu trabajo.</p></details>
+      </div>
+    </div>
+  </section>
+
   <section class="contact ba" id="contacto" aria-labelledby="h-contacto">
     <div class="wrap">
       <div class="contact-info">
         <p class="eyebrow">Contacto</p>
-        <h2 id="h-contacto">¿Hablamos de tu cocina?</h2>
+        <h2 id="h-contacto">¿Qué espacio querés transformar?</h2>
         <span class="bar" aria-hidden="true"></span>
         <p class="lead">Escribinos por WhatsApp o dejanos tus datos y te pasamos un presupuesto estimado, sin costo.</p>
         <a class="btn wa js-wa" href="#" target="_blank" rel="noopener" data-track="portada whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.1-1.3A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-3-.2-.3a8.2 8.2 0 1 1 6.9 3.9zm4.5-6.1c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.19-.54.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43l-.76-1.83c-.2-.48-.4-.41-.56-.42h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.57 11 11 0 0 0 4.2 3.7c1.57.68 2.18.74 2.96.62a2.5 2.5 0 0 0 1.66-1.17 2 2 0 0 0 .14-1.17c-.06-.11-.22-.17-.47-.29z"/></svg>Escribinos por WhatsApp</a>
@@ -335,12 +370,13 @@ footer a:hover{color:var(--ink)}
             <label class="fl">Nombre<input type="text" id="fNombre" autocomplete="name" required maxlength="80"></label>
             <label class="fl">WhatsApp o teléfono<input type="tel" id="fTel" autocomplete="tel" inputmode="tel" required maxlength="30" placeholder="09X XXX XXX"></label>
           </div>
+          <label class="fl">Tipo de proyecto<select id="fTipo"><option>Cocina</option><option>Placar</option><option>Living o estudio</option><option>Otro proyecto</option></select></label>
           <label class="fl"><span>Email <small>(opcional)</small></span><input type="email" id="fEmail" autocomplete="email" maxlength="120"></label>
           <label class="fl"><span>¿Qué tenés en mente? <small>(opcional)</small></span><textarea id="fMsg" maxlength="1200" placeholder="Medidas aproximadas, barrio, para cuándo…"></textarea></label>
           <label class="hp" aria-hidden="true">No completar<input type="text" name="_gotcha" id="fHp" tabindex="-1" autocomplete="off"></label>
           <label class="ok"><input type="checkbox" id="fOk" required><span>Acepto que RHR Arquitectura e Interiores me contacte con estos datos. No se usan para nada más.</span></label>
           <p class="msg" id="lfMsg" aria-live="polite"></p>
-          <button class="btn primary send" id="lfSend" type="submit">Enviar</button>
+          <button class="btn primary send" id="lfSend" type="submit">Solicitar presupuesto estimado</button>
         </div>
         <div class="done" id="lfDone" hidden tabindex="-1">
           <strong id="lfThanks">¡Gracias!</strong>
@@ -352,6 +388,7 @@ footer a:hover{color:var(--ink)}
   </section>
 </main>
 
+<a class="mobile-contact btn primary" href="#contacto" data-track="portada consulta movil">Consultar mi proyecto <span aria-hidden="true">→</span></a>
 <footer>
   <div class="wrap">
     <span>© <span id="yr">2026</span> RHR Arquitectura e Interiores · Montevideo, Uruguay</span>
@@ -386,11 +423,27 @@ footer a:hover{color:var(--ink)}
   });
 
   /* WhatsApp */
-  var waText = "Hola Ruben, vi la página de RHR y quiero consultar por una cocina.";
+  var waText = "Hola Rubén, vi la página de RHR y quiero consultar por un proyecto a medida.";
   function waLink(t) { return "https://wa.me/" + WA + "?text=" + encodeURIComponent(t); }
   [].forEach.call(document.querySelectorAll(".js-wa"), function (a) { a.href = waLink(waText); });
   $("yr").textContent = new Date().getFullYear();
 
+  var menuButton = document.querySelector(".menu-toggle"), nav = $("mainNav");
+  function closeMenu() { menuButton.setAttribute("aria-expanded", "false"); nav.classList.remove("is-open"); }
+  menuButton.addEventListener("click", function () { var open = menuButton.getAttribute("aria-expanded") !== "true"; menuButton.setAttribute("aria-expanded", String(open)); nav.classList.toggle("is-open", open); });
+  nav.addEventListener("click", function (e) { if (e.target.closest("a")) closeMenu(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") { closeMenu(); menuButton.focus(); } });
+  document.querySelectorAll("[data-service]").forEach(function (a) { a.addEventListener("click", function () { $("fTipo").value = a.getAttribute("data-service"); }); });
+
+  var mobileContact = document.querySelector(".mobile-contact");
+  if ("IntersectionObserver" in window) {
+    var visibleSections = new Set();
+    var contactObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) { if (entry.isIntersecting) visibleSections.add(entry.target); else visibleSections.delete(entry.target); });
+      mobileContact.hidden = visibleSections.size > 0;
+    });
+    contactObserver.observe(document.querySelector(".hero")); contactObserver.observe($("contacto"));
+  }
   /* cabecera con borde al bajar */
   var top = $("top");
   addEventListener("scroll", function () { top.classList.toggle("scrolled", scrollY > 8); }, { passive: true });
@@ -413,7 +466,7 @@ footer a:hover{color:var(--ink)}
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var msg = $("lfMsg"); msg.className = "msg";
-    var d = { nombre: $("fNombre").value.trim(), telefono: $("fTel").value.trim(), email: $("fEmail").value.trim(), mensaje: $("fMsg").value.trim() };
+    var d = { nombre: $("fNombre").value.trim(), telefono: $("fTel").value.trim(), email: $("fEmail").value.trim(), mensaje: $("fMsg").value.trim(), tipo: $("fTipo").value };
     var bad = !d.nombre ? $("fNombre") : d.telefono.replace(/\D/g, "").length < 6 ? $("fTel")
       : d.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email) ? $("fEmail") : !$("fOk").checked ? $("fOk") : null;
     if (bad) {
@@ -424,14 +477,14 @@ footer a:hover{color:var(--ink)}
     }
     if (!FS) {
       var t = "Hola, soy " + d.nombre + ". Vi la página de RHR y quiero pedir un presupuesto." +
-        (d.mensaje ? "\n" + d.mensaje : "") + "\nTel: " + d.telefono + (d.email ? "\nEmail: " + d.email : "");
+        "\nProyecto: " + d.tipo + (d.mensaje ? "\n" + d.mensaje : "") + "\nTel: " + d.telefono + (d.email ? "\nEmail: " + d.email : "");
       RHRTrack("portada formulario por whatsapp");
       window.open(waLink(t), "_blank", "noopener"); return;
     }
     var btn = $("lfSend"); btn.disabled = true; btn.textContent = "Enviando…";
     fetch("https://formspree.io/f/" + encodeURIComponent(FS), {
       method: "POST", headers: { "Accept": "application/json", "Content-Type": "application/json" },
-      body: JSON.stringify({ nombre: d.nombre, telefono: d.telefono, email: d.email || undefined, mensaje: d.mensaje,
+      body: JSON.stringify({ nombre: d.nombre, telefono: d.telefono, email: d.email || undefined, mensaje: d.mensaje, tipo_proyecto: d.tipo,
         origen: "portada" + (src ? " · " + src : ""), cliente: cli || "", pagina: location.href,
         _subject: "Web RHR · presupuesto de " + d.nombre, _gotcha: $("fHp").value })
     }).then(function (r) {
@@ -442,7 +495,7 @@ footer a:hover{color:var(--ink)}
     }).catch(function () {
       msg.className = "msg err";
       msg.innerHTML = 'No se pudo enviar. Probá de nuevo o <a href="' + waLink(waText) + '" target="_blank" rel="noopener">escribinos por WhatsApp</a>.';
-    }).then(function () { btn.disabled = false; btn.textContent = "Enviar"; });
+    }).then(function () { btn.disabled = false; btn.textContent = "Solicitar presupuesto estimado"; });
   });
 })();
 </script>
