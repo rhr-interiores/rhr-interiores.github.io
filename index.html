@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html data-theme="light" lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="preload" as="image" href="img/cocina-terminada.jpg">
+<link rel="preload" as="image" href="img/portada-cocina.jpg">
 <script src="config.js?v=r18-2"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "RHR Arquitectura e Interiores", "description": "Diseñamos, fabricamos e instalamos cocinas y muebles a medida en Montevideo. Cada proyecto viene con un visor 3D para recorrerlo antes de fabricar, con los electrodomésticos reales.", "url": "https://rhr-interiores.github.io/", "image": "https://rhr-interiores.github.io/og.jpg", "telephone": "+598 96 071 856", "areaServed": ["Montevideo", "Punta del Este"], "address": {"@type": "PostalAddress", "addressLocality": "Montevideo", "addressCountry": "UY"}, "sameAs": ["https://www.instagram.com/rhr_arquitectura_interiores/"]}</script>
 <style>
@@ -195,58 +195,22 @@ footer a:hover{color:var(--ink)}
 
 
 /* Fotografías reales de RHR */
-.hero .shot{aspect-ratio:3/4;max-height:640px}.real-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.real-grid figure{margin:0}.real-grid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}.real-grid figcaption{font-size:15px;margin-top:12px}.photo-credit{font-size:12px;color:var(--muted);margin-top:20px}.studio-photo{margin-top:28px;width:100%;height:auto;border-radius:12px}.swipe-hint{display:none}@media(max-width:759px){.hero .shot{max-height:none}.real-grid{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:16px;margin-inline:-16px;padding:0 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.real-grid::-webkit-scrollbar{display:none}.real-grid figure{flex:0 0 78%;scroll-snap-align:start}.swipe-hint{display:block;margin:10px 0 0;font-size:13px;color:var(--muted)}}
+.hero .shot{aspect-ratio:3/4;max-height:640px}.real-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.real-grid figure{margin:0}.real-grid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}.real-grid figcaption{font-size:15px;margin-top:12px}.photo-credit{font-size:12px;color:var(--muted);margin-top:20px}.studio-photo{margin-top:28px;width:100%;height:auto;border-radius:12px}@media(max-width:759px){.hero .shot{max-height:none}.real-grid{grid-template-columns:1fr;gap:28px}}
 
 .detail-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.photo-open{position:relative;display:block;overflow:hidden;border-radius:12px;background:var(--bg2)}.photo-open img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;transition:transform .25s}.photo-open:hover img{transform:scale(1.025)}.photo-open span{position:absolute;right:10px;bottom:10px;background:#fff;color:#222;padding:6px 10px;border-radius:5px;font-size:12px}.installation-gallery img{aspect-ratio:3/2}.gallery-subhead{margin-top:48px}.wardrobe-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px}.wardrobe-grid h2{max-width:14ch}.wardrobe-grid .photo-open img{aspect-ratio:3/4}.wardrobe-grid .btn{margin-top:16px}.photo-dialog{padding:16px;border:0;border-radius:12px;background:var(--bg);color:var(--ink);max-width:92vw;max-height:92vh}.photo-dialog::backdrop{background:rgb(0 0 0 / .8)}.photo-dialog img{max-width:85vw;max-height:74vh;width:auto;height:auto;object-fit:contain;margin:auto}.photo-dialog button{display:block;margin:0 0 12px auto;padding:10px 18px;font:inherit;cursor:pointer}.photo-dialog p{margin:12px 0 0;font-size:14px}@media(max-width:900px){.detail-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.wardrobe-grid{gap:28px}}@media(max-width:599px){.wardrobe-grid{grid-template-columns:1fr}.detail-gallery{gap:12px}.photo-open span{font-size:11px;padding:4px 7px}.gallery-subhead{margin-top:32px}}
+
+/* Diseño aprobado: portada inmersiva y composición editorial */
+:root{--bg:#fff;--bg2:#faf8f6;--card:#fff;--ink:#252525;--muted:#626262;--brand:#fa6b22;--accent:#fa6b22;--line:#e4e1de;--r:0;--f-display:"Helvetica Neue",Arial,sans-serif}html{scroll-padding-top:100px}h1,h2,h3{font-weight:400;letter-spacing:-.035em;font-stretch:normal}.wrap{width:min(1400px,90%);max-width:1400px}section{padding:90px 0}h2{font-size:clamp(30px,3.3vw,48px)}.sec-head{margin-bottom:42px}.eyebrow{color:#bb4008;font:500 13px/1.5 var(--f-display);letter-spacing:.035em;text-transform:uppercase;display:flex;align-items:center;gap:16px}.eyebrow:after{content:"";width:45px;height:1px;background:var(--brand)}.text-link{font-weight:400;text-decoration:none;border-bottom:1px solid var(--brand);padding-bottom:6px;display:inline-block;cursor:pointer}.top{position:absolute;top:0;left:0;right:0;z-index:30;background:transparent;border:0;color:white;box-shadow:none;backdrop-filter:none}.top.scrolled{background:transparent;box-shadow:none}.top .wrap{position:relative;height:120px;border-bottom:1px solid #ffffff50}.brand-link{position:absolute;left:50%;top:14px;transform:translateX(-50%);z-index:2}.logo{width:172px;height:88px;object-fit:contain}.nav{width:100%;display:grid;grid-template-columns:1fr 1fr 1.5fr 2fr 1fr 1fr;gap:20px;align-items:center}.nav a.l{font-size:12px;text-transform:uppercase;font-weight:400;color:white;padding:10px 0;white-space:nowrap}.nav a:nth-child(4){grid-column:5}.nav a:nth-child(5){text-align:right}.hero{padding:0;position:relative;height:100svh;min-height:650px;max-height:1200px;background:#28231e;color:white}.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.68),transparent 28%,transparent 52%,rgba(0,0,0,.64))}.hero .wrap{height:100%;display:flex;align-items:flex-end;position:relative;z-index:1;padding:0 0 66px}.hero-txt{display:block}.hero h1{font-size:clamp(48px,5vw,76px);line-height:1.05;max-width:12ch;margin:0 0 20px;font-weight:300}.hero-txt p{font-size:20px;margin:0 0 28px}.hero-link{color:white;display:inline-block;border-bottom:1px solid white;padding-bottom:5px;text-decoration:none;font-size:18px}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}.project-cover{display:block;overflow:hidden}.project-cover img{width:100%;height:480px;object-fit:cover;transition:transform .4s}.project-cover:hover img{transform:scale(1.025)}.project-grid h3{font-size:26px;margin:16px 0 10px}.project-more{border-top:1px solid var(--line);margin-top:32px}.project-more summary{cursor:pointer;padding:22px 0;list-style:none;display:flex;justify-content:space-between}.project-more summary::-webkit-details-marker{display:none}.project-more[open]>summary{color:#ab3c0a}.project-more .wrap{width:100%;padding:28px 0}.project-more .ba{padding:30px 0}.project-more .card{box-shadow:none;border-radius:0}.project-more .sec-head h2{font-size:30px}.real-grid img,.photo-open,.studio-photo{border-radius:0}#servicios{background:var(--bg2)}.service-num{display:none}.service-grid article{border:0;padding:0}.service-grid h3{font-size:26px;border-bottom:1px solid var(--brand);padding-bottom:16px;margin-top:0}.service-grid p{font-size:16px}.service-grid a{font-size:14px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:45px;counter-reset:none}.steps li{border:0;background:none;padding:0;border-radius:0}.steps .n{color:#bc4109;font:400 28px/1 var(--f-display);background:none;width:auto;height:auto;display:block;border:0;margin-bottom:12px}.steps h3{font-size:24px}.steps p{font-size:16px;color:var(--muted)}#estudio{padding-top:0}.studio-grid{grid-template-columns:1.3fr 1fr;gap:60px;align-items:center;border-top:1px solid var(--line);padding-top:60px}.studio-photo{margin:0}.studio-grid h2{margin:12px 0 24px}.studio-grid .lead{font-size:20px}.studio-more{margin-top:28px}.studio-more summary{list-style:none}.studio-more p{line-height:1.8}#contacto{background:#fa6b22;color:#212121;padding:48px 0}.contact-band{display:flex;align-items:center;gap:44px;justify-content:space-between}.contact-band h2{font-size:clamp(32px,3vw,46px);margin:0}.contact-band .btn{border:1px solid #252525;background:transparent;border-radius:0;color:#212121;font-weight:400;white-space:nowrap}.contact-band .text-link{border-color:#252525}#consulta,.contact-faq{margin-top:24px}#consulta>summary,.contact-faq>summary{cursor:pointer;font-size:14px}#consulta form{max-width:700px;margin:24px auto 0;background:white;padding:30px;color:#252525}.contact-faq>.wrap{background:white;color:#252525;padding:30px;margin-top:24px}.btn.primary{background:#fa6b22;color:#212121;border-color:#fa6b22;border-radius:0}.mobile-contact{display:none!important}footer{background:#252525;color:white;padding:30px 0}footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}footer a{color:white}footer .footer-logo{width:130px;height:auto}a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid #5799d9;outline-offset:5px}
+@media(max-width:1000px){.nav{gap:12px;grid-template-columns:1fr 1fr 1.5fr 1.6fr 1fr 1fr}.nav a.l{font-size:10px}.logo{width:140px}.project-cover img{height:360px}.steps{gap:24px}.studio-grid{gap:32px}}
+@media(max-width:759px){html{scroll-padding-top:20px}.top .wrap{height:88px}.brand-link{left:0;transform:none;top:3px}.logo{width:128px;height:76px}.menu-toggle{display:block;position:absolute;right:0;top:22px;background:transparent;border:1px solid #ffffff80;color:white;border-radius:0}.nav{display:none;position:absolute;top:88px;left:-5.5%;right:-5.5%;width:111%;padding:24px;background:#252525}.nav.is-open{display:flex}.nav a.l{font-size:14px;padding:12px;text-align:left}.hero{min-height:620px;height:100svh}.hero-image{object-position:48% center}.hero .wrap{padding-bottom:48px}.hero h1{font-size:52px}.hero-txt p{font-size:16px;max-width:26ch}.hero-link{font-size:16px}section{padding:56px 0}.project-grid{gap:36px;grid-template-columns:1fr}.project-cover img{height:360px}.project-grid h3{font-size:24px}.service-grid{gap:35px}.steps{grid-template-columns:1fr 1fr;gap:36px 22px}.steps h3{font-size:22px}.studio-grid{grid-template-columns:1fr;padding-top:40px}.contact-band{display:block}.contact-band .btn{margin:24px 18px 12px 0}.contact-band .text-link{margin:12px 0}footer .wrap{flex-direction:column;align-items:flex-start}.wardrobe-grid{grid-template-columns:1fr}.contact-faq>.wrap{width:100%;padding:20px}#consulta form{padding:20px}.photo-dialog{max-width:96vw}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
 
-<header class="top" id="top">
-  <div class="wrap">
-    <a href="./" aria-label="RHR Arquitectura e Interiores, inicio">
-      <img class="logo logo-l" src="img/logo.png" width="440" height="229" alt="RHR Arquitectura e Interiores">
-      <img class="logo logo-d" src="img/logo-light.png" width="440" height="229" alt="RHR Arquitectura e Interiores">
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav">Menú <span aria-hidden="true">☰</span></button>
-    <nav id="mainNav" class="nav" aria-label="Secciones">
-      <a class="l" href="#proyectos">Proyectos</a>
-      <a class="l" href="#servicios">Servicios</a>
-      <a class="l" href="#como">Cómo trabajamos</a>
-      <a class="l" href="#estudio">Estudio</a>
-      <a class="l" href="#contacto">Contacto</a>
-      <a class="btn wa js-wa" href="#" target="_blank" rel="noopener" data-track="portada whatsapp" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.1-1.3A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-3-.2-.3a8.2 8.2 0 1 1 6.9 3.9zm4.5-6.1c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.19-.54.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43l-.76-1.83c-.2-.48-.4-.41-.56-.42h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.57 11 11 0 0 0 4.2 3.7c1.57.68 2.18.74 2.96.62a2.5 2.5 0 0 0 1.66-1.17 2 2 0 0 0 .14-1.17c-.06-.11-.22-.17-.47-.29z"/></svg><span>WhatsApp</span></a>
-    </nav>
-  </div>
-</header>
+<header class="top" id="top"><div class="wrap"><a class="brand-link" href="#top" aria-label="RHR, inicio"><img class="logo" src="img/rhr-white.svg" width="196" height="100" alt="RHR Arquitectura - Interiores"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav">Menú ☰</button><nav id="mainNav" class="nav" aria-label="Secciones"><a class="l" href="#proyectos">Proyectos</a><a class="l" href="#servicios">Servicios</a><a class="l" href="#como">Cómo trabajamos</a><a class="l" href="#estudio">Estudio</a><a class="l" href="#contacto">Contacto</a></nav></div></header>
 
-<main>
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-txt">
-        <p class="eyebrow">Cocinas y muebles a medida · Montevideo</p>
-        <h1>Tu cocina, pensada para vivirla</h1>
-        <span class="bar" aria-hidden="true"></span>
-        <p class="lead">Diseñamos, fabricamos e instalamos cocinas y muebles a medida. Explorá la distribución, las terminaciones y el espacio de guardado en 3D antes de fabricar.</p>
-        <div class="cta">
-          <a class="btn primary" href="#contacto" data-track="portada presupuesto hero">Pedir presupuesto <span aria-hidden="true">→</span></a>
-          <a class="btn" href="cocina-3-0/" data-track="portada abrir cocina-3-0 hero">Explorar una cocina en 3D</a>
-        </div>
-      </div>
-      <a class="shot" href="#obra-real" aria-label="Ver fotografías de la cocina terminada"><img src="img/cocina-terminada.jpg" width="720" height="960" alt="Cocina terminada por RHR con frentes blancos, madera y tonos cálidos" fetchpriority="high"><span class="badge big">Proyecto terminado · Ver fotos</span></a>
-    </div>
-  </section>
-
-  <div class="stats" aria-label="Nuestra propuesta">
-    <ul class="wrap">
-      <li><b>A medida</b><span>Para tu espacio y tu forma de usarlo</span></li>
-      <li><b>Antes, en 3D</b><span>Explorá y ajustá el diseño</span></li>
-      <li><b>De principio a fin</b><span>Del relevamiento a la instalación</span></li>
-    </ul>
-  </div>
-
-<section id="obra-real"><div class="wrap"><div class="sec-head"><p class="eyebrow">Del montaje a la vida cotidiana</p><h2>Una cocina, de verdad.</h2><p class="lead">El resultado terminado, sus detalles en uso y una mirada al proceso de instalación.</p></div><div class="real-grid"><figure><img src="img/cocina-terminada.jpg" width="720" height="960" loading="lazy" alt="Cocina terminada con frentes blancos, madera y tonos cálidos"><figcaption>Resultado final</figcaption></figure><figure><img src="img/cocina-en-uso.jpg" width="720" height="960" loading="lazy" alt="Detalle de la cocina en uso: grifería y zona de lavado"><figcaption>Pensada para usarla</figcaption></figure><figure><img src="img/cocina-montaje.jpg" width="720" height="955" loading="lazy" alt="Mobiliario de cocina durante el montaje, antes de las terminaciones"><figcaption>Durante el montaje</figcaption></figure></div><p class="swipe-hint" aria-hidden="true">Deslizá para ver más →</p></div></section>
-<section id="detalles-rhr"><div class="wrap"><div class="sec-head"><p class="eyebrow">Una mirada de cerca</p><h2>El trabajo está en los detalles.</h2><p class="lead">Terminaciones, herrajes y ajustes que forman parte de cada mueble.</p></div><div class="detail-gallery"><a class="photo-open" href="img/terminaciones_01.jpg" aria-label="Ampliar: Detalle de mobiliario RHR · fotografía 1"><img src="img/terminaciones_01.jpg" width="1080" height="1080" loading="lazy" alt="Detalle de mobiliario RHR · fotografía 1"><span>Ampliar ↗</span></a><a class="photo-open" href="img/terminaciones_02.jpg" aria-label="Ampliar: Detalle de mobiliario RHR · fotografía 2"><img src="img/terminaciones_02.jpg" width="1080" height="1080" loading="lazy" alt="Detalle de mobiliario RHR · fotografía 2"><span>Ampliar ↗</span></a><a class="photo-open" href="img/terminaciones_03.jpg" aria-label="Ampliar: Detalle de mobiliario RHR · fotografía 3"><img src="img/terminaciones_03.jpg" width="1080" height="1080" loading="lazy" alt="Detalle de mobiliario RHR · fotografía 3"><span>Ampliar ↗</span></a><a class="photo-open" href="img/terminaciones_04.jpg" aria-label="Ampliar: Detalle de mobiliario RHR · fotografía 4"><img src="img/terminaciones_04.jpg" width="1080" height="1079" loading="lazy" alt="Detalle de mobiliario RHR · fotografía 4"><span>Ampliar ↗</span></a></div><div class="sec-head gallery-subhead"><p class="eyebrow">Manos a la obra</p><h3>Así toma forma cada proyecto.</h3><p>Una mirada al montaje y a los ajustes del mobiliario.</p></div><div class="detail-gallery installation-gallery"><a class="photo-open" href="img/montaje_02.jpg" aria-label="Ampliar: Montaje de mobiliario RHR · fotografía 1"><img src="img/montaje_02.jpg" width="1080" height="719" loading="lazy" alt="Montaje de mobiliario RHR · fotografía 1"><span>Ampliar ↗</span></a><a class="photo-open" href="img/montaje_03.jpg" aria-label="Ampliar: Montaje de mobiliario RHR · fotografía 2"><img src="img/montaje_03.jpg" width="1080" height="719" loading="lazy" alt="Montaje de mobiliario RHR · fotografía 2"><span>Ampliar ↗</span></a><a class="photo-open" href="img/montaje_04.jpg" aria-label="Ampliar: Montaje de mobiliario RHR · fotografía 3"><img src="img/montaje_04.jpg" width="1080" height="719" loading="lazy" alt="Montaje de mobiliario RHR · fotografía 3"><span>Ampliar ↗</span></a><a class="photo-open" href="img/montaje_05.jpg" aria-label="Ampliar: Montaje de mobiliario RHR · fotografía 4"><img src="img/montaje_05.jpg" width="1080" height="719" loading="lazy" alt="Montaje de mobiliario RHR · fotografía 4"><span>Ampliar ↗</span></a></div></div></section><section id="vestidor" class="studio"><div class="wrap wardrobe-grid"><div><p class="eyebrow">Diseño de vestidores</p><h2>Un lugar para cada cosa.</h2><p class="lead">Espacios de guardado, iluminación integrada y una distribución que ayuda a organizar el día a día.</p><a class="btn primary" href="#contacto">Consultar por un vestidor →</a></div><a class="photo-open" href="img/vestidor.jpg" aria-label="Ampliar: Vestidor con iluminación integrada y espacios de guardado"><img src="img/vestidor.jpg" width="814" height="1080" loading="lazy" alt="Vestidor con iluminación integrada y espacios de guardado"><span>Ampliar ↗</span></a></div></section>  <section id="proyectos">
+<main><section class="hero"><img class="hero-image" src="img/portada-cocina.jpg" width="2048" height="1365" alt="Cocina de RHR con frentes blancos, madera y tonos cálidos" fetchpriority="high"><div class="wrap"><div class="hero-txt"><h1>Espacios para<br>vivirlos.</h1><p>Cocinas y muebles diseñados a tu medida.</p><a href="#proyectos" class="hero-link">Ver proyectos →</a></div></div></section><section id="proyectos"><div class="wrap"><div class="sec-head"><p class="eyebrow">Proyectos</p><h2>Diseño que se vive.</h2></div><div class="project-grid"><article><a class="project-cover" href="#obra-real"><img src="img/portada-cocina.jpg" width="2048" height="1365" loading="lazy" alt="Cocina a medida de RHR"></a><h3>Cocina a medida</h3><a class="text-link" href="#obra-real">Ver proyecto →</a></article><article><a class="project-cover" href="#vestidor"><img src="img/vestidor.jpg" width="1080" height="1433" loading="lazy" alt="Diseño de vestidor con iluminación integrada"></a><h3>Diseño de vestidor</h3><a class="text-link" href="#vestidor">Ver proyecto →</a></article></div><details class="project-more" id="obra-real"><summary>Ver fotografías de la cocina y el montaje <span>＋</span></summary><div class="wrap"><div class="sec-head"><p class="eyebrow">Del montaje a la vida cotidiana</p><h2>Una cocina, de verdad.</h2><p class="lead">El resultado terminado, sus detalles en uso y una mirada al proceso de instalación.</p></div><div class="real-grid"><figure><img src="img/cocina-terminada.jpg" width="720" height="960" loading="lazy" alt="Cocina terminada con frentes blancos, madera y tonos cálidos"><figcaption>Resultado final</figcaption></figure><figure><img src="img/cocina-en-uso.jpg" width="720" height="960" loading="lazy" alt="Detalle de la cocina en uso: grifería y zona de lavado"><figcaption>Pensada para usarla</figcaption></figure><figure><img src="img/cocina-montaje.jpg" width="720" height="955" loading="lazy" alt="Mobiliario de cocina durante el montaje, antes de las terminaciones"><figcaption>Durante el montaje</figcaption></figure></div><p class="photo-credit">Fotografías: <a href="https://www.instagram.com/ling.fotos/" target="_blank" rel="noopener">@ling.fotos</a> · Publicadas por RHR en Instagram.</p></div><div class="wrap"><div class="sec-head"><p class="eyebrow">Una mirada de cerca</p><h2>El trabajo está en los detalles.</h2><p class="lead">Terminaciones, herrajes y ajustes que forman parte de cada mueble.</p></div><div class="detail-gallery"><a class="photo-open" href="img/terminaciones_01.jpg" aria-label="Ampliar: Detalle de mobiliario RHR · fotografía 1"><img src="img/terminaciones_01.jpg" width="1440" height="1440" loading="lazy" alt="Detalle de mobiliario RHR · fotografía 1"><span>Ampliar ↗</span></a><a class="photo-open" href="img/terminaciones_02.jpg" aria-label="Ampliar: Detalle de mobiliario RHR · fotografía 2"><img src="img/terminaciones_02.jpg" width="1440" height="1440" loading="lazy" alt="Detalle de mobiliario RHR · fotografía 2"><span>Ampliar ↗</span></a><a class="photo-open" href="img/terminaciones_03.jpg" aria-label="Ampliar: Detalle de mobiliario RHR · fotografía 3"><img src="img/terminaciones_03.jpg" width="1440" height="1440" loading="lazy" alt="Detalle de mobiliario RHR · fotografía 3"><span>Ampliar ↗</span></a><a class="photo-open" href="img/terminaciones_04.jpg" aria-label="Ampliar: Detalle de mobiliario RHR · fotografía 4"><img src="img/terminaciones_04.jpg" width="1080" height="1079" loading="lazy" alt="Detalle de mobiliario RHR · fotografía 4"><span>Ampliar ↗</span></a></div><p class="photo-credit">Fotografías: <a href="https://www.instagram.com/ling.fotos/" target="_blank" rel="noopener">@ling.fotos</a>.</p><div class="sec-head gallery-subhead"><p class="eyebrow">Manos a la obra</p><h3>Así toma forma cada proyecto.</h3><p>Una mirada al montaje y a los ajustes del mobiliario.</p></div><div class="detail-gallery installation-gallery"><a class="photo-open" href="img/montaje_02.jpg" aria-label="Ampliar: Montaje de mobiliario RHR · fotografía 1"><img src="img/montaje_02.jpg" width="1080" height="719" loading="lazy" alt="Montaje de mobiliario RHR · fotografía 1"><span>Ampliar ↗</span></a><a class="photo-open" href="img/montaje_03.jpg" aria-label="Ampliar: Montaje de mobiliario RHR · fotografía 2"><img src="img/montaje_03.jpg" width="1080" height="719" loading="lazy" alt="Montaje de mobiliario RHR · fotografía 2"><span>Ampliar ↗</span></a><a class="photo-open" href="img/montaje_04.jpg" aria-label="Ampliar: Montaje de mobiliario RHR · fotografía 3"><img src="img/montaje_04.jpg" width="1080" height="719" loading="lazy" alt="Montaje de mobiliario RHR · fotografía 3"><span>Ampliar ↗</span></a><a class="photo-open" href="img/montaje_05.jpg" aria-label="Ampliar: Montaje de mobiliario RHR · fotografía 4"><img src="img/montaje_05.jpg" width="1080" height="719" loading="lazy" alt="Montaje de mobiliario RHR · fotografía 4"><span>Ampliar ↗</span></a></div></div></details><details class="project-more" id="vestidor"><summary>Explorar el diseño del vestidor <span>＋</span></summary><div class="wrap wardrobe-grid"><div><p class="eyebrow">Diseño de vestidores</p><h2>Un lugar para cada cosa.</h2><p class="lead">Espacios de guardado, iluminación integrada y una distribución que ayuda a organizar el día a día.</p><a class="btn primary" href="#contacto">Consultar por un vestidor →</a></div><a class="photo-open" href="img/vestidor.jpg" aria-label="Ampliar: Diseño de vestidor con iluminación integrada y espacios de guardado"><img src="img/vestidor.jpg" width="1080" height="1433" loading="lazy" alt="Diseño de vestidor con iluminación integrada y espacios de guardado"><span>Ampliar ↗</span></a></div></details><details class="project-more"><summary>Recorrer nuestras propuestas en 3D <span>＋</span></summary>
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Proyectos</p>
@@ -283,8 +247,6 @@ footer a:hover{color:var(--ink)}
 
       </div>
     </div>
-  </section>
-
   <section class="ba" aria-labelledby="h-ba">
     <div class="wrap">
       <div class="sec-head">
@@ -302,70 +264,16 @@ footer a:hover{color:var(--ink)}
       </div>
       <p class="ba-note">La propuesta es una visualización 3D. Deslizá para comparar. En el <a href="cocina-3-0/" data-track="portada abrir cocina-3-0 antes">visor 3D</a> podés hacerlo desde cualquier ángulo.</p>
     </div>
-  </section>
-
-
-  <section id="servicios">
+  </section></details></div></section><section id="servicios">
     <div class="wrap">
-      <div class="sec-head"><p class="eyebrow">Muebles para tu día a día</p><h2>Una solución para cada ambiente</h2><p class="lead">Diseño, materiales y distribución pensados en conjunto.</p></div>
+      <div class="sec-head"><p class="eyebrow">Servicios</p><h2>Tu espacio, a tu medida.</h2><p class="lead">Diseño, materiales y distribución pensados en conjunto.</p></div>
       <div class="service-grid">
-        <article><span class="service-num">01 / COCINAS</span><h3>Todo en su lugar</h3><p>Distribución, superficies de trabajo y guardado adaptados al espacio y a tus electrodomésticos.</p><a href="#contacto" data-service="Cocina">Consultar por una cocina →</a></article>
-        <article><span class="service-num">02 / PLACARES</span><h3>Orden a tu medida</h3><p>Interiores organizados según lo que necesitás guardar, con frentes que acompañan el ambiente.</p><a href="#contacto" data-service="Placar">Consultar por un placar →</a></article>
-        <article><span class="service-num">03 / LIVING Y ESTUDIO</span><h3>Espacios que conviven</h3><p>Bibliotecas, escritorios y muebles que integran trabajo, descanso y almacenamiento.</p><a href="#contacto" data-service="Living o estudio">Consultar por un mueble →</a></article>
+        <article><span class="service-num">01 / COCINAS</span><h3>Cocinas</h3><p>Distribución, superficies de trabajo y guardado adaptados al espacio y a tus electrodomésticos.</p><a href="#contacto" data-service="Cocina">Consultar por una cocina →</a></article>
+        <article><span class="service-num">02 / PLACARES</span><h3>Placares y vestidores</h3><p>Interiores organizados según lo que necesitás guardar, con frentes que acompañan el ambiente.</p><a href="#contacto" data-service="Placar">Consultar por un placar →</a></article>
+        <article><span class="service-num">03 / LIVING Y ESTUDIO</span><h3>Muebles para living</h3><p>Bibliotecas, escritorios y muebles que integran trabajo, descanso y almacenamiento.</p><a href="#contacto" data-service="Living o estudio">Consultar por un mueble →</a></article>
       </div>
     </div>
-  </section>
-
-  <section id="como" aria-labelledby="h-como">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Cómo trabajamos</p>
-        <h2 id="h-como">Un solo equipo, del diseño a la instalación</h2>
-      </div>
-      <ol class="steps">
-        <li><span class="n">01</span><h3>Presupuesto estimado</h3><p>Con medidas aproximadas y fotos del lugar te pasamos un presupuesto estimado, sin costo.</p></li>
-        <li><span class="n">02</span><h3>Relevamiento y diseño 3D</h3><p>Con una seña medimos en obra y armamos tu cocina en 3D, con los electrodomésticos que vas a colocar. La recorrés, la ajustamos juntos y la seña se descuenta del total.</p></li>
-        <li><span class="n">03</span><h3>Fabricación</h3><p>Planos acotados de cada módulo y fabricación a medida, con renders para aprobar terminaciones.</p></li>
-        <li><span class="n">04</span><h3>Instalación</h3><p>Instalamos y hacemos el seguimiento de obra hasta la entrega.</p></li>
-      </ol>
-    </div>
-  </section>
-
-
-  <section id="estudio" class="studio">
-    <div class="wrap studio-grid">
-      <div><p class="eyebrow">RHR Arquitectura e Interiores</p><h2>Diseñar también es acompañar.</h2><img class="studio-photo" src="img/ruben-montaje.jpg" width="1080" height="719" loading="lazy" alt="Rubén ajustando una guía de cajón durante el montaje"></div>
-      <div><p class="lead">Soy Rubén. En RHR trabajamos sobre cada espacio para encontrar una distribución funcional y una propuesta de mobiliario que acompañe tu día a día.</p><p>El modelo 3D nos permite conversar sobre decisiones concretas: cómo abre una puerta, qué entra en un cajón y cómo se relaciona el mueble con el ambiente. Así podemos ajustar el proyecto juntos antes de fabricar.</p><a href="#contacto" class="text-link">Contame qué querés transformar →</a></div>
-    </div>
-  </section>
-  <section id="preguntas">
-    <div class="wrap faq-grid">
-      <div class="sec-head"><p class="eyebrow">Antes de empezar</p><h2>Tu proyecto, con las cosas claras.</h2><p class="lead">Estas son algunas de las consultas más habituales.</p></div>
-      <div class="faq-list">
-        <details><summary>¿Qué necesito para pedir un presupuesto?</summary><p>Fotos del espacio, medidas aproximadas y una idea de lo que necesitás. Con esa información podemos preparar una estimación inicial sin costo.</p></details>
-        <details><summary>¿Cuándo se realiza el diseño 3D?</summary><p>Cuando avanzamos con una seña, realizamos el relevamiento y desarrollamos el modelo 3D. La seña se descuenta del total, según el proceso indicado en la propuesta.</p></details>
-        <details><summary>¿Puedo explorar el proyecto desde mi celular?</summary><p>Sí. Los proyectos de esta web se abren en el navegador, sin instalar aplicaciones. Podés recorrerlos y probar sus puertas y cajones interactivos.</p></details>
-        <details><summary>¿El presupuesto inicial es definitivo?</summary><p>Es una estimación basada en las fotos y medidas aproximadas. El alcance y el importe final se definen con el relevamiento, el diseño y los materiales elegidos.</p></details>
-        <details><summary>¿Cómo consulto por plazos, instalación y garantía?</summary><p>Contanos dónde está el proyecto y para cuándo lo necesitás. Solicitá que la propuesta detalle el alcance de la instalación, los plazos y las condiciones de garantía aplicables a tu trabajo.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact ba" id="contacto" aria-labelledby="h-contacto">
-    <div class="wrap">
-      <div class="contact-info">
-        <p class="eyebrow">Contacto</p>
-        <h2 id="h-contacto">¿Qué espacio querés transformar?</h2>
-        <span class="bar" aria-hidden="true"></span>
-        <p class="lead">Escribinos por WhatsApp o dejanos tus datos y te pasamos un presupuesto estimado, sin costo.</p>
-        <a class="btn wa js-wa" href="#" target="_blank" rel="noopener" data-track="portada whatsapp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.1-1.3A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-3-.2-.3a8.2 8.2 0 1 1 6.9 3.9zm4.5-6.1c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.19-.54.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43l-.76-1.83c-.2-.48-.4-.41-.56-.42h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07 4.8 4.8 0 0 0 1 2.57 11 11 0 0 0 4.2 3.7c1.57.68 2.18.74 2.96.62a2.5 2.5 0 0 0 1.66-1.17 2 2 0 0 0 .14-1.17c-.06-.11-.22-.17-.47-.29z"/></svg>Escribinos por WhatsApp</a>
-        <ul class="links">
-          <li><a href="tel:+59896071856" data-track="portada telefono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5h3.5l1.6 4.2-2.2 1.4a11 11 0 0 0 7 7l1.4-2.2 4.2 1.6V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><span class="mono">096 071 856</span></a></li>
-          <li><a href="https://www.instagram.com/rhr_arquitectura_interiores/" target="_blank" rel="noopener" data-track="portada instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>@rhr_arquitectura_interiores</a></li>
-          <li><span style="display:inline-flex;gap:8px;align-items:center;color:var(--muted)"><svg style="width:18px;height:18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Montevideo, Uruguay</span></li>
-        </ul>
-      </div>
-      <form class="f" id="lf" novalidate>
+  </section><section id="como" aria-labelledby="h-como"><div class="wrap"><div class="sec-head"><p class="eyebrow">Cómo trabajamos</p><h2 id="h-como">De la idea al último detalle.</h2></div><ol class="steps"><li><span class="n">01</span><h3>Escuchamos</h3><p>Conocemos tus ideas, tus necesidades y la forma en que vivís el espacio.</p></li><li><span class="n">02</span><h3>Diseñamos en 3D</h3><p>Explorás la distribución y las terminaciones antes de fabricar.</p></li><li><span class="n">03</span><h3>Fabricamos</h3><p>Trabajamos a medida, con atención a los materiales y a cada detalle.</p></li><li><span class="n">04</span><h3>Instalamos</h3><p>Montamos y ajustamos el mobiliario para que empieces a disfrutarlo.</p></li></ol></div></section><section id="estudio"><div class="wrap studio-grid"><img class="studio-photo" src="img/ruben-montaje.jpg" width="1080" height="719" loading="lazy" alt="Rubén trabajando en el montaje de un cajón"><div><p class="eyebrow">Estudio</p><h2>Diseñar también<br>es acompañar.</h2><p class="lead">Soy Rubén. En RHR diseñamos mobiliario pensado para tu espacio y tu forma de vivirlo.</p><details class="studio-more"><summary class="text-link">Conocé el estudio →</summary><p>Trabajamos en la distribución, el diseño y la instalación de muebles a medida. El modelo 3D nos permite conversar sobre cómo se va a usar cada espacio y ajustar juntos el proyecto antes de fabricar.</p></details></div></div></section><section id="contacto" aria-labelledby="h-contacto"><div class="wrap"><div class="contact-band"><h2 id="h-contacto">Hablemos de tu<br>próximo proyecto.</h2><a class="btn js-wa" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a><a class="text-link" href="#consulta">Escribinos</a></div><details id="consulta"><summary>Enviar una consulta</summary><form class="f" id="lf" novalidate>
         <div id="lfFields" style="display:grid;gap:14px">
           <h3>Pedir presupuesto</h3>
           <div class="row2">
@@ -385,15 +293,23 @@ footer a:hover{color:var(--ink)}
           <p>Recibimos tus datos. Te escribimos a la brevedad.</p>
           <a class="btn" href="cocina-3-0/">Mientras tanto, recorré la Cocina 3.0</a>
         </div>
-      </form>
+      </form></details><details class="contact-faq"><summary>Preguntas frecuentes</summary>
+    <div class="wrap faq-grid">
+      <div class="sec-head"><p class="eyebrow">Antes de empezar</p><h2>Tu proyecto, con las cosas claras.</h2><p class="lead">Estas son algunas de las consultas más habituales.</p></div>
+      <div class="faq-list">
+        <details><summary>¿Qué necesito para pedir un presupuesto?</summary><p>Fotos del espacio, medidas aproximadas y una idea de lo que necesitás. Con esa información podemos preparar una estimación inicial sin costo.</p></details>
+        <details><summary>¿Cuándo se realiza el diseño 3D?</summary><p>Cuando avanzamos con una seña, realizamos el relevamiento y desarrollamos el modelo 3D. La seña se descuenta del total, según el proceso indicado en la propuesta.</p></details>
+        <details><summary>¿Puedo explorar el proyecto desde mi celular?</summary><p>Sí. Los proyectos de esta web se abren en el navegador, sin instalar aplicaciones. Podés recorrerlos y probar sus puertas y cajones interactivos.</p></details>
+        <details><summary>¿El presupuesto inicial es definitivo?</summary><p>Es una estimación basada en las fotos y medidas aproximadas. El alcance y el importe final se definen con el relevamiento, el diseño y los materiales elegidos.</p></details>
+        <details><summary>¿Cómo consulto por plazos, instalación y garantía?</summary><p>Contanos dónde está el proyecto y para cuándo lo necesitás. Solicitá que la propuesta detalle el alcance de la instalación, los plazos y las condiciones de garantía aplicables a tu trabajo.</p></details>
+      </div>
     </div>
-  </section>
-</main>
+  </details></div></section></main>
 
 <a class="mobile-contact btn primary" href="#contacto" data-track="portada consulta movil">Consultar mi proyecto <span aria-hidden="true">→</span></a>
 <footer>
   <div class="wrap">
-    <span>© <span id="yr">2026</span> RHR Arquitectura e Interiores · Montevideo, Uruguay</span>
+    <img class="footer-logo" src="img/rhr-white.svg" width="196" height="100" alt="RHR"><span>© <span id="yr">2026</span> RHR Arquitectura e Interiores · Montevideo, Uruguay</span>
     <span><a href="https://www.instagram.com/rhr_arquitectura_interiores/" target="_blank" rel="noopener" data-track="portada instagram">Instagram</a> · <a class="js-wa" href="#" target="_blank" rel="noopener" data-track="portada whatsapp">WhatsApp</a></span>
   </div>
 </footer>
@@ -503,5 +419,5 @@ footer a:hover{color:var(--ink)}
 </script>
 <dialog class="photo-dialog" id="photo-dialog" aria-label="Fotografía ampliada"><button type="button" id="photo-close">Cerrar ×</button><img id="photo-large" alt=""><p id="photo-caption"></p></dialog><script>
 (function(){var d=document.getElementById('photo-dialog'),im=document.getElementById('photo-large'),caption=document.getElementById('photo-caption');document.querySelectorAll('.photo-open').forEach(function(a){a.addEventListener('click',function(e){if(!d.showModal)return;e.preventDefault();im.src=a.href;im.alt=a.querySelector('img').alt;caption.textContent=im.alt;d.showModal();});});document.getElementById('photo-close').addEventListener('click',function(){d.close();});d.addEventListener('click',function(e){if(e.target===d)d.close();});})();
-</script></body>
+</script><script>(function(){function reveal(hash){if(!hash||hash==='#')return;var el=document.getElementById(hash.slice(1));if(!el)return;if(el.tagName==='DETAILS')el.open=true;var p=el.parentElement;while(p){if(p.tagName==='DETAILS')p.open=true;p=p.parentElement;}}document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(a)reveal(a.getAttribute('href'));});addEventListener('hashchange',function(){reveal(location.hash);});reveal(location.hash);})();</script></body>
 </html>
