@@ -2,7 +2,7 @@
 // Completá estos datos y subí SOLO este archivo a GitHub.
 window.RHR_CONFIG = {
   // Código de GoatCounter: si tu panel es https://rhr-interiores.goatcounter.com, poné "rhr-interiores"
-  goatcounter: "",
+  goatcounter: "rhr-interiores",
 
   // ID del formulario de Formspree: si tu endpoint es https://formspree.io/f/xabcdwxy, poné "xabcdwxy"
   // Si lo dejás vacío, los formularios mandan los datos por WhatsApp.
