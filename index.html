@@ -204,6 +204,9 @@ footer a:hover{color:var(--ink)}
 @media(max-width:1000px){.nav{gap:12px;grid-template-columns:1fr 1fr 1.5fr 1.6fr 1fr 1fr}.nav a.l{font-size:10px}.logo{width:140px}.project-cover img{height:360px}.steps{gap:24px}.studio-grid{gap:32px}}
 @media(max-width:759px){html{scroll-padding-top:20px}.top .wrap{height:88px}.brand-link{left:0;transform:none;top:3px}.logo{width:128px;height:76px}.menu-toggle{display:block;position:absolute;right:0;top:22px;background:transparent;border:1px solid #ffffff80;color:white;border-radius:0}.nav{display:none;position:absolute;top:88px;left:-5.5%;right:-5.5%;width:111%;padding:24px;background:#252525}.nav.is-open{display:flex}.nav a.l{font-size:14px;padding:12px;text-align:left}.hero{min-height:620px;height:100svh}.hero-image{object-position:48% center}.hero .wrap{padding-bottom:48px}.hero h1{font-size:52px}.hero-txt p{font-size:16px;max-width:26ch}.hero-link{font-size:16px}section{padding:56px 0}.project-grid{gap:36px;grid-template-columns:1fr}.project-cover img{height:360px}.project-grid h3{font-size:24px}.service-grid{gap:35px}.steps{grid-template-columns:1fr 1fr;gap:36px 22px}.steps h3{font-size:22px}.studio-grid{grid-template-columns:1fr;padding-top:40px}.contact-band{display:block}.contact-band .btn{margin:24px 18px 12px 0}.contact-band .text-link{margin:12px 0}footer .wrap{flex-direction:column;align-items:flex-start}.wardrobe-grid{grid-template-columns:1fr}.contact-faq>.wrap{width:100%;padding:20px}#consulta form{padding:20px}.photo-dialog{max-width:96vw}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Cabecera fija y degradado reforzado */
+.top{position:fixed;background:linear-gradient(180deg,rgba(12,12,12,.97) 0%,rgba(12,12,12,.85) 55%,rgba(12,12,12,.48) 100%);opacity:1;backdrop-filter:none;transition:none}.top.scrolled{background:#121212;opacity:1;backdrop-filter:none;box-shadow:0 1px 0 #333}.top.scrolled .wrap{border-bottom-color:transparent}.hero:after{background:linear-gradient(180deg,rgba(0,0,0,.8) 0%,rgba(0,0,0,.25) 30%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.8) 100%)}html{scroll-padding-top:140px}@media(max-width:759px){html{scroll-padding-top:108px}.nav.is-open{background:#121212}}
 </style>
 </head>
 <body>
@@ -364,7 +367,9 @@ footer a:hover{color:var(--ink)}
   }
   /* cabecera con borde al bajar */
   var top = $("top");
-  addEventListener("scroll", function () { top.classList.toggle("scrolled", scrollY > 8); }, { passive: true });
+  function updateHeader(){ top.classList.toggle("scrolled", scrollY > 8); }
+  addEventListener("scroll", updateHeader, { passive: true });
+  addEventListener("pageshow", updateHeader); updateHeader();
 
   /* antes / después */
   var cmp = $("cmp"), rng = cmp.querySelector("input");
